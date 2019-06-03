@@ -1,21 +1,23 @@
+/* @media only screen and (min-width: 600px) {
+    body {
+      background-color: white;
+    }
+} */
 body{
     padding-top: 60px;
     margin: 0px;
 }
 
 #navbar{
-    background-color: red;
+    background-color: white;
     position: fixed;
     top: 0px;
     width: 100%;
     margin-left: 0px;
     height:60px;
-}
-#nav{
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-    width: 60px;
+    display: inline-block;
+
+
 }
 #nav-item{
     display: inline;
@@ -46,4 +48,23 @@ background-color: brown;
     width: 25%;
     height:100vh;
     float:right;
+}
+
+#logo{
+    max-height: 100%;
+    float: left;
+}
+#srch{
+    display:block;
+    padding:0%;
+    margin: auto;
+   
+}
+nav ul li{
+    float: left;
+    
+
+}
+nav ul{
+    float: right;
 }
