@@ -108,3 +108,22 @@ nav ul{
     background-color: blueviolet;
 }
 
+.grid{
+    display: grid;
+    grid-template-columns: 1fr 900px 300px 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+    grid-template-areas: 
+    ". content sidebar .";   
+}
+
+.content{
+    background-color: red;
+    grid-area: content;
+    padding: 10px 5px;
+}
+
+.sidebar{
+    background-color: blue;
+    grid-area: sidebar;
+    padding: 10px 5px;
+}
