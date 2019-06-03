@@ -6,6 +6,7 @@
 body{
     padding-top: 60px;
     margin: 0px;
+    background-color: rgb(250, 250, 250);
 }
 
 #navbar{
@@ -16,8 +17,7 @@ body{
     margin-left: 0px;
     height:60px;
     display: inline-block;
-
-
+    z-index: 9999;
 }
 #nav-item{
     display: inline;
@@ -25,29 +25,6 @@ body{
     padding: 0%;
     display: block;
 
-}
-
-.container{
-    background-color: yellow;
-    margin: auto;
-    width: 80%;
-    min-width: 1200px;
-    height: 100vh;
-
-}
-#video{
-
-background-color: brown;
-    width: 75%;
-    height:100vh;
-    float:left;
-}
-
-#sidebar{
-    background-color: blue;
-    width: 25%;
-    height:100vh;
-    float:right;
 }
 
 #logo{
@@ -68,3 +45,54 @@ nav ul li{
 nav ul{
     float: right;
 }
+
+.container{
+    margin: auto;
+    width: 80%;
+    min-width: 1200px;
+    height: 100vh;
+    padding:10px;
+}
+#video{
+    background-color: brown;
+    width: 72%;
+    height:100vh;
+    float:left;
+}
+
+.video-container {
+    position: relative;
+    padding-bottom: 56.25%; /*16:9*/
+    padding-top: 30px; 
+    height: 0; 
+    overflow: hidden;
+  }
+   
+  .video-container iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+  }
+
+#sidebar{
+    background-color: blue;
+    width: 26%;
+    height:100vh;
+    float:right;
+}
+
+.suggestion{
+
+}
+
+.suggestion a img {
+    float: left;
+    width: 168px;
+}
+.suggestion div {
+    float: right;
+    background-color: blueviolet;
+}
+
