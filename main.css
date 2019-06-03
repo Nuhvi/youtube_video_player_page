@@ -10,7 +10,7 @@ body{
 }
 
 #navbar{
-    background-color: white;
+    background-color: rgb(56, 56, 56);
     position: fixed;
     top: 0px;
     width: 100%;
@@ -26,10 +26,14 @@ body{
     display: block;
 
 }
-
-#logo{
-    max-height: 100%;
+.float-left{
     float: left;
+}
+#logo{
+    max-height: 100%; 
+}
+#createvideo{
+    max-height: 100%;
 }
 #srch{
     display:block;
@@ -37,13 +41,21 @@ body{
     margin: auto;
    
 }
+.btn{
+    background-color: black;
+    border: none;
+    padding: 12px 16px;
+    font-size: 38px;
+    cursor: pointer;
+    color:white;
+}
 nav ul li{
     float: left;
-    
-
+    padding-left: 1%;
 }
 nav ul{
     float: right;
+    list-style-type: none;
 }
 
 .container{
