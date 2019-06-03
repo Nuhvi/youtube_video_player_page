@@ -1,24 +1,36 @@
 #navbar{
-background-color: red;
-position: fixed;
-top: 0px;
-width: 100%;
-margin: auto;
+    background-color: red;
+    position: fixed;
+    top: 0px;
+    width: 100%;
+    margin: auto;
+    
 }
+#nav{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    width: 60px;
+}
+#nav-item{
+    display: inline;
+    margin: 0%;
+    padding: 0%;
+    display: block;
 
-#all{
+}
+/* #all{
     width: 100%;
     height: 100vh;
     background-color: aqua;
 
-}
+} */
 
 #video{
     background-color: green;
     width:60%;
     height:100vh;
     float:left;
-
 }
 
 #sidebar{
