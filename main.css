@@ -30,7 +30,8 @@ body{
     float: left;
 }
 #logo{
-    max-height: 100%; 
+    margin:auto;
+    max-height: 80%; 
 }
 #createvideo{
     max-height: 100%;
@@ -41,8 +42,9 @@ body{
     margin: auto;
    
 }
+
 .btn{
-    background-color: black;
+    background-color: rgb(56, 56, 56);
     border: none;
     padding: 12px 16px;
     font-size: 38px;
@@ -58,12 +60,24 @@ nav ul{
     list-style-type: none;
 }
 
+.header{
+    display: grid;
+    grid-template-columns: 5px 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+
+}
+
 .container{
     margin: auto;
     width: 80%;
     min-width: 1200px;
     height: 100vh;
     padding:10px;
+}
+#video{
+    background-color: brown;
+    width: 72%;
+    height:100vh;
+    float:left;
 }
 
 .video-container {
@@ -102,113 +116,3 @@ nav ul{
     background-color: blueviolet;
 }
 
-.grid{
-    display: grid;
-    grid-template-columns: 1fr 800px 400px 1fr;
-    grid-template-rows: 1fr 1fr 1fr 1fr;
-    grid-template-areas: 
-    ". content sidebar .";   
-}
-
-.content{
-    grid-area: content;
-    padding: 10px 10px;
-}
-
-.border-bottom{
-    border-bottom: 1px solid rgb(192, 192, 192);
-}
-
-.video-title {
-    padding-bottom: 10px;
-}
-
-.video-info{
-    padding-top: 10px;
-
-}
-
-.owner{
-    display: grid;
-    grid-template-columns: 60px 1fr 100px;
-}
-
-.owner-icon a img{
-    border-radius: 50%;
-}
-
-.owner-name{
-    align-self: center;
-}
-
-.owner-name h4 {
-    margin: auto;
-    padding: 2px;
-}
-.owner-name p {
-    margin: auto;
-    padding: 2px;
-    font-size: 11px;
-    font-weight: bold;
-}
-
-.subscribe a{
-    text-decoration: none;
-    color: white;
-    font-weight: bold;
-    align-self: center;
-    background-color: red;
-    border-radius: 2px;
-    padding: 5px 10px;
-
- 
-}
-
-
-.description{
-    margin: 0px 100px 10px 60px;
-
-}
-
-.description p{
-    font-size: 14px;
-}
-
-.description a{
-    text-decoration: none;
-    font-weight: bold;
-    font-size: 12px;
-
-}
-
-
-.grey{
-    color: grey
-}
-.sidebar{
-    grid-area: sidebar;
-    padding: 10px 10px;
-}
-
-.thumbnail-container{
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    margin-bottom: 7px;
-}
-
-.thumbnail-info{
-}
-
-.thumbnail-info h5{
-    margin: auto;
-    margin-bottom: 7px;
-}
-.thumbnail-info p {
-    margin: auto;
-    padding: 0px;
-    font-size: .8em;
-}
-
-.fonts{
-    font-family: Arial, Helvetica, sans-serif;
-}
