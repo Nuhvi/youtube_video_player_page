@@ -15,10 +15,15 @@ margin: auto;
 
 #video{
     background-color: green;
-    width: 50%;
+    width:60%;
+    height:100vh;
+    float:left;
 
 }
 
 #sidebar{
-    background-color: blue
+    background-color: blue;
+    width:40%;
+    height:100vh;
+    float:left;
 }
