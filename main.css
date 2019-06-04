@@ -1,3 +1,4 @@
+
 body{
     margin: 0px;
 }
@@ -123,6 +124,10 @@ h1{
     padding: 24px;
     margin-top: 56px;
     display: grid;
+    grid-template-areas: 
+    "video "
+    "sidebar"
+    "comments";
     height: 100%;
 
 }
@@ -130,7 +135,6 @@ h1{
 
 /* Video section */
 .videoplayer{
-
 
 }
 
@@ -168,14 +172,14 @@ h1{
     margin-bottom: 24px;
     padding-bottom: 16px;
     display: grid;
-    grid-template-rows: 67px 89px;
+    grid-template-rows: 67px auto;
 }
 
 .owner{
     display: grid;
     grid-template-columns: 64px 1fr 1fr;
     align-items: center;
-
+    padding-top: 16px;
 }
 
 
@@ -183,36 +187,101 @@ h1{
     border-radius: 50%;
 }
 
-.owner-name *{
+.owner-name h1{
+    font-size: 14px;
+    font-weight: bold;
+    margin:0px;
+}
+
+.owner-name p{
+    font-size: 14px;
     margin:0px;
 }
 
 .subscribe{
     justify-self: right;
+    background-color: red;
+    height: 37px;
+    width: 140px;
+    border-radius: 2px;
+    display: grid;
+    justify-content: center;
+}
+.subscribe a{
+    /* font-weight: bold; */
+    border-radius: 2px;
+    color:white;
+    text-decoration: none;
+    align-self: center;
 }
 
 
 
 .description{
+    margin-top: 14px;
     margin-left: 64px;
 }
-.description * {
-    margin: 16px 0px ;
+.description p{
+    margin: auto;
+    font-size: 15px;
 }
 
-.subscribe a{
-    background-color: red;
-    border-radius: 2px;
-    color:white;
+.description a{
     text-decoration: none;
+    font-size: 12px;
+    font-weight: 600;
+
 }
+
+
 
 
 /* Sidebar */
 .sidebar{
-    display: grid;
+    grid-area: sidebar;
 }
 
 .thumbnail-container{
-    background-color: red;
+    margin-bottom: 8px;
+    display: grid;
+    grid-template-columns: 168px auto;
 }
+
+.thumbnail{
+
+}
+
+.thumbnail a img{
+    width:168px;
+    height: 94px;
+}
+
+.thumbnail-info{
+    margin-left: 8px;
+}
+
+.thumbnail-info * {
+    margin: 0;
+    font-size: 14px;
+}
+
+.thumbnail-info h1{
+    font-weight: 600;
+}
+
+
+/* Responsive media query */
+
+@media screen and (min-width: 1000px) {
+    .container {
+        grid-template-areas: 
+        "video sidebar"
+        "comments sidebar"; 
+        grid-template-columns: auto 400px;  
+    }
+    .sidebar{
+        margin-left: 24px;
+    }
+}
+
+/*  */
