@@ -48,8 +48,16 @@ h1{
     z-index: 99999;
     justify-content: space-between;
 }
+.header-left a img{
+    height: 20px;
+    margin: 0;
+
+}
+
 .header-left{
     align-self: center; 
+    display: flex;
+    margin-left:10%;
 }
 
 
@@ -61,27 +69,42 @@ h1{
 
 
 #logo{
-    /* max-height: 100%;
-    padding: 8px 12px; */
+    /* max-height: 100%;*/
+    width: 80px;
+    height: 24px; 
+    flex: none;
     
 }
 
-.btn{
+.menu-btn{
     border:none;
     font-size: 15px;
     cursor: pointer;
-    padding: 7px;
-    background-color:whitesmoke;
+    padding: 7px 10px;
+    background-color: white;
+    display: flex;
+}
+
+.btn{
+    border: none;
+    font-size: 15px;
+    cursor: pointer;
+    padding: 7px 10px;
     display: flex;
     align-self: center;
+    background-color: white;
+    align-self: auto;
 }
-.btn i{
+.btn{
     height: 10px;
+    padding: 8px 10px;
+    
 }
 
 #srchBox{
     padding: 6px 50px;
     font-size: 12px;
+    
 }
 
 
