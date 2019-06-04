@@ -6,16 +6,19 @@ body{
     font-family: 'Courier New', Courier, monospace;
 }
 
+.header-left{
+    align-self: center; 
+}
 
-.float-left{
-    float: left;
+.search-bar{
+    align-self: center;
 }
-#logo{
-    margin:auto;
-    max-height: 80%; 
-}
-#createvideo{
+#create-video{
     max-height: 100%;
+    
+}
+.grey-color{
+    color:grey;
 }
 /* #srch{
     display:block;
@@ -24,11 +27,19 @@ body{
    
 } */
 
+.menu{
+    justify-self: center;
+    align-self: center;
+}
+#logo{
+    /* max-height: 100%;
+    padding: 8px 12px; */
+    
+}
+
 #srchBox{
     padding: 6px 50px;
     font-size: 12px;
-    
-    text-align: left;
 }
 .btn{
     border:none;
@@ -39,15 +50,13 @@ body{
     cursor: pointer;
     background-color:whitesmoke;
 }
-nav ul li{
-    float: left;
-    padding-left: 1%;
+.icons-grid{
+    display: grid;
+    justify-self: right;
+    grid-gap: 20px;
+    align-self: center;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
 }
-nav ul{
-    float: right;
-    list-style-type: none;
-}
-
 .header{
     border-bottom: 4px solid;
     border-color: rgb(241, 241, 241);
@@ -57,7 +66,9 @@ nav ul{
     top: 0;
     width: 100%;
     display: grid;
-    grid-template-columns: 10% 10% 40% 5% 5% 5% 5% 5%;
+    grid-template-columns: 1fr 1fr 1fr;
+    align-self: center;
+    z-index: 99999;
 }
 
 
