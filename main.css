@@ -10,22 +10,19 @@ body{
 }
 
 #navbar{
-    background-color: rgb(56, 56, 56);
+    background-color:seashell;
     position: fixed;
     top: 0px;
     width: 100%;
     margin-left: 0px;
+    margin-top:0px;
+    margin-bottom: 5%;
     height:60px;
     display: inline-block;
     z-index: 9999;
-}
-#nav-item{
-    display: inline;
-    margin: 0%;
     padding: 0%;
-    display: block;
-
 }
+
 .float-left{
     float: left;
 }
@@ -36,20 +33,27 @@ body{
 #createvideo{
     max-height: 100%;
 }
-#srch{
+/* #srch{
     display:block;
     padding:0%;
     margin: auto;
    
-}
+} */
 
+#srchBox{
+    padding: 6px 50px;
+    font-size: 12px;
+    
+    text-align: left;
+}
 .btn{
-    background-color: rgb(56, 56, 56);
-    border: none;
-    padding: 12px 16px;
-    font-size: 38px;
+    border:none;
+    margin-left: 0%;
+    margin-right: 10%;
+    padding: 2px 6px 0 0;
+    font-size: 15px;
     cursor: pointer;
-    color:white;
+    background-color:whitesmoke;
 }
 nav ul li{
     float: left;
@@ -61,9 +65,16 @@ nav ul{
 }
 
 .header{
+    
+    position: fixed;
+    top: 1%;
+    width: 100%;
+    margin-left: 0px;
     display: grid;
-    grid-template-columns: 5px 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
-
+    grid-template-columns: 10% 10% 40% 5% 5% 5% 5% 5%;
+    margin-bottom: 1%;
+    margin-left: 1%;
+    margin-right: 1%;
 }
 
 .container{
