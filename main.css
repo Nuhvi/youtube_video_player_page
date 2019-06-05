@@ -41,7 +41,7 @@ body{
 /* Header */
 .header{
     display: grid;
-    grid-template-columns: 160px auto 248px;
+    grid-template-columns: 160px auto auto;
 
     top:0px;
     right:0px;
@@ -370,12 +370,12 @@ body{
 /* Responsive media query */
 
 
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 780px) {
     .header{
        align-content: center ;
+       grid-template-columns: 160px auto auto;
 
     }
-
 
     .header-left a{
         margin-right: 16px;
