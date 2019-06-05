@@ -7,7 +7,6 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Youtube video player page</title>
     <link rel="stylesheet" href="main.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link href="https:// .googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
     <link rel="icon" href="images/icon.png">
 </head>
@@ -16,45 +15,50 @@
 
     <div class="header">
         <div class="header-left">
-            <button class="menu-btn">
-                <i class="fa fa-bars"></i>
-            </button>
-            <a href=""><img id="logo" src="images/youtube-logo.png" id="logo" src="" alt=""></a>
+            <a href="#">
+                <svg>
+                    <path d="M3 18h18v-2H3v2zm0-5h18v-2H3v2zm0-7v2h18V6H3z"></path>
+                </svg>
+            </a>
+            <a id="logo" href="#">
+                <img src="images/youtube-logo.png" alt="">
+            </a>
         </div>
-
-        <button class="btn" type="submit">
-            <input id="srchBox" type="text" placeholder="Search..">
-            <i class="fa fa-fw fa-search"></i>
-        </button>
-
-        <div class="icons-grid">
-            <div class="create-video">
-                <a href="#">
-                    <i class="fa fa-video-camera grey-color" aria-hidden="true"></i>
-                </a>
-            </div>
-            <div>
-                <a href="#">
-                    <i class="fa fa-th grey-color" aria-hidden="true"></i>
-                </a>
-            </div>
-            <div>
-                <a href="#">
-                    <i class="fas fa-comment grey-color"></i>
-                </a>
-            </div>
-            <div>
-                <a href="#">
-                    <i class="fa fa-bell grey-color" aria-hidden="true"></i>
-                </a>
-            </div>
-            <div>
-                5
-            </div>
-
+        <div class="search">
+            sdsdff
         </div>
-
-
+        <div class="header-right">
+            
+            <a href="#">
+                <svg>
+                    <path
+                        d="M17 10.5V7c0-.55-.45-1-1-1H4c-.55 0-1 .45-1 1v10c0 .55.45 1 1 1h12c.55 0 1-.45 1-1v-3.5l4 4v-11l-4 4zM14 13h-3v3H9v-3H6v-2h3V8h2v3h3v2z">
+                    </path>
+                </svg>
+            </a><a href="#">
+                <svg>
+                    <path
+                        d="M4 8h4V4H4v4zm6 12h4v-4h-4v4zm-6 0h4v-4H4v4zm0-6h4v-4H4v4zm6 0h4v-4h-4v4zm6-10v4h4V4h-4zm-6 4h4V4h-4v4zm6 6h4v-4h-4v4zm0 6h4v-4h-4v4z">
+                    </path>
+                </svg>
+            </a>
+            <a href="#">
+                <svg>
+                    <path
+                        d="M12.04 4C17 4 21 7.7 21 12.3c0 4.57-4 8.28-8.96 8.28-1.76 0-3.4-.47-4.8-1.28-.15-.1-.35-.1-.52-.04-1.58.68-2.8.88-3.45.93-.2 0-.34-.26-.22-.4.6-.9 1.08-1.8 1.43-2.5.1-.2.1-.46-.04-.65C3.58 15.4 3.1 13.9 3.1 12.3c0-4.6 4-8.3 8.94-8.3zm1.6 9.56v1.58c0 .17.22.25.34.13l3.43-3.34c.1-.07.1-.2 0-.27L14 8.32c-.12-.12-.33-.04-.33.13V10c0 .1-.07.18-.17.2-3.38.52-5.04 2.73-5.74 5.1-.06.2.2.34.32.2 1.3-1.42 3.05-2.1 5.4-2.13.1 0 .2.1.2.2z">
+                    </path>
+                </svg>
+            </a>
+            <a href="#">
+                <svg>
+                    <path d="M12 22c1.1 0 2-.9 2-2h-4c0 1.1.9 2 2 2zm6-6v-5c0-3.07-1.64-5.64-4.5-6.32V4c0-.83-.67-1.5-1.5-1.5s-1.5.67-1.5
+                    1.5v.68C7.63 5.36 6 7.92 6 11v5l-2 2v1h16v-1l-2-2z"></path>
+                </svg>
+            </a>
+            <a id="user" href="#">
+                <img src="images/microverse.png" alt="">
+            </a>
+        </div>
     </div>
 
     <div class="container">
@@ -83,9 +87,7 @@
                         <h1>Think Story</h1>
                         <p class="grey">Published on 22 May 2019</p>
                     </div>
-                    <div class="subscribe ">
-                        <a href="#">SUBSCRIBE</a>
-                    </div>
+                    <div class="subscribe"><a href="#"> SUBSCRIBE <span>2M</span></a></div>
                 </div>
 
                 <div class="description ">
@@ -95,16 +97,39 @@
                 </div>
             </div>
 
+
         </div>
         <div class="sidebar">
+            <div class="next">
+                <h3>Up next</h3>
+                <div>
+                    <h4 class="grey">AUTOPLAY</h4>
+                    <label class="switch">
+                        <input type="checkbox" checked>
+                        <span class="slider round"></span>
+                    </label>
+                </div>
+
+            </div>
+            <div class="thumbnail-container ">
+                <div class="thumbnail">
+                    <a href="#"> <img src="images/thumbnail.jpg" alt=""> </a>
+                </div>
+                <div class="thumbnail-info  ">
+                    <h1>Suggestion Video Title</h1>
+                    <p class="grey">Channel name</p>
+                    <p class="grey">531,624 views</p>
+                </div>
+            </div>
+            <div class="break border-bottom"></div>
             <div class="thumbnail-container">
                 <div class="thumbnail">
                     <a href="#"> <img src="images/thumbnail.jpg" alt=""> </a>
                 </div>
                 <div class="thumbnail-info  ">
-                    <h1>How Game of Thrones Should Have Ended</h1>
-                    <p class="grey">Numberphile</p>
-                    <p class="grey">531,624 views</p>
+                    <h1>Suggestion Video Title</ h1>
+                        <p class="grey">Channel name</p>
+                        <p class="grey">531,624 views</p>
                 </div>
             </div>
             <div class="thumbnail-container">
@@ -112,9 +137,9 @@
                     <a href="#"> <img src="images/thumbnail.jpg" alt=""> </a>
                 </div>
                 <div class="thumbnail-info  ">
-                    <h1>How Game of Thrones Should Have Ended</ h1>
-                    <p class="grey">Numberphile</p>
-                    <p class="grey">531,624 views</p>
+                    <h1>Suggestion Video Title</h5>
+                        <p class="grey">Channel name</p>
+                        <p class="grey">531,624 views</p>
                 </div>
             </div>
             <div class="thumbnail-container">
@@ -122,9 +147,9 @@
                     <a href="#"> <img src="images/thumbnail.jpg" alt=""> </a>
                 </div>
                 <div class="thumbnail-info  ">
-                     <h1>How Game of Thrones Should Have Ended</h5>
-                    <p class="grey">Numberphile</p>
-                    <p class="grey">531,624 views</p>
+                    <h1>Suggestion Video Title</h5>
+                        <p class="grey">Channel name</p>
+                        <p class="grey">531,624 views</p>
                 </div>
             </div>
             <div class="thumbnail-container">
@@ -132,9 +157,9 @@
                     <a href="#"> <img src="images/thumbnail.jpg" alt=""> </a>
                 </div>
                 <div class="thumbnail-info  ">
-                     <h1>How Game of Thrones Should Have Ended</h5>
-                    <p class="grey">Numberphile</p>
-                    <p class="grey">531,624 views</p>
+                    <h1>Suggestion Video Title</h5>
+                        <p class="grey">Channel name</p>
+                        <p class="grey">531,624 views</p>
                 </div>
             </div>
             <div class="thumbnail-container">
@@ -142,9 +167,9 @@
                     <a href="#"> <img src="images/thumbnail.jpg" alt=""> </a>
                 </div>
                 <div class="thumbnail-info  ">
-                     <h1>How Game of Thrones Should Have Ended</h5>
-                    <p class="grey">Numberphile</p>
-                    <p class="grey">531,624 views</p>
+                    <h1>Suggestion Video Title</h5>
+                        <p class="grey">Channel name</p>
+                        <p class="grey">531,624 views</p>
                 </div>
             </div>
             <div class="thumbnail-container">
@@ -152,9 +177,9 @@
                     <a href="#"> <img src="images/thumbnail.jpg" alt=""> </a>
                 </div>
                 <div class="thumbnail-info  ">
-                     <h1>How Game of Thrones Should Have Ended</h5>
-                    <p class="grey">Numberphile</p>
-                    <p class="grey">531,624 views</p>
+                    <h1>Suggestion Video Title</h5>
+                        <p class="grey">Channel name</p>
+                        <p class="grey">531,624 views</p>
                 </div>
             </div>
             <div class="thumbnail-container">
@@ -162,9 +187,9 @@
                     <a href="#"> <img src="images/thumbnail.jpg" alt=""> </a>
                 </div>
                 <div class="thumbnail-info  ">
-                     <h1>How Game of Thrones Should Have Ended</h5>
-                    <p class="grey">Numberphile</p>
-                    <p class="grey">531,624 views</p>
+                    <h1>Suggestion Video Title</h5>
+                        <p class="grey">Channel name</p>
+                        <p class="grey">531,624 views</p>
                 </div>
             </div>
             <div class="thumbnail-container">
@@ -172,9 +197,9 @@
                     <a href="#"> <img src="images/thumbnail.jpg" alt=""> </a>
                 </div>
                 <div class="thumbnail-info  ">
-                     <h1>How Game of Thrones Should Have Ended</h5>
-                    <p class="grey">Numberphile</p>
-                    <p class="grey">531,624 views</p>
+                    <h1>Suggestion Video Title</h5>
+                        <p class="grey">Channel name</p>
+                        <p class="grey">531,624 views</p>
                 </div>
             </div>
             <div class="thumbnail-container">
@@ -182,9 +207,9 @@
                     <a href="#"> <img src="images/thumbnail.jpg" alt=""> </a>
                 </div>
                 <div class="thumbnail-info  ">
-                     <h1>How Game of Thrones Should Have Ended</h5>
-                    <p class="grey">Numberphile</p>
-                    <p class="grey">531,624 views</p>
+                    <h1>Suggestion Video Title</h5>
+                        <p class="grey">Channel name</p>
+                        <p class="grey">531,624 views</p>
                 </div>
             </div>
             <div class="thumbnail-container">
@@ -192,9 +217,9 @@
                     <a href="#"> <img src="images/thumbnail.jpg" alt=""> </a>
                 </div>
                 <div class="thumbnail-info  ">
-                     <h1>How Game of Thrones Should Have Ended</h5>
-                    <p class="grey">Numberphile</p>
-                    <p class="grey">531,624 views</p>
+                    <h1>Suggestion Video Title</h5>
+                        <p class="grey">Channel name</p>
+                        <p class="grey">531,624 views</p>
                 </div>
             </div>
             <div class="thumbnail-container">
@@ -202,9 +227,9 @@
                     <a href="#"> <img src="images/thumbnail.jpg" alt=""> </a>
                 </div>
                 <div class="thumbnail-info  ">
-                     <h1>How Game of Thrones Should Have Ended</h5>
-                    <p class="grey">Numberphile</p>
-                    <p class="grey">531,624 views</p>
+                    <h1>Suggestion Video Title</h5>
+                        <p class="grey">Channel name</p>
+                        <p class="grey">531,624 views</p>
                 </div>
             </div>
             <div class="thumbnail-container">
@@ -212,9 +237,9 @@
                     <a href="#"> <img src="images/thumbnail.jpg" alt=""> </a>
                 </div>
                 <div class="thumbnail-info  ">
-                     <h1>How Game of Thrones Should Have Ended</h5>
-                    <p class="grey">Numberphile</p>
-                    <p class="grey">531,624 views</p>
+                    <h1>Suggestion Video Title</h5>
+                        <p class="grey">Channel name</p>
+                        <p class="grey">531,624 views</p>
                 </div>
             </div>
             <div class="thumbnail-container">
@@ -222,9 +247,9 @@
                     <a href="#"> <img src="images/thumbnail.jpg" alt=""> </a>
                 </div>
                 <div class="thumbnail-info  ">
-                     <h1>How Game of Thrones Should Have Ended</h5>
-                    <p class="grey">Numberphile</p>
-                    <p class="grey">531,624 views</p>
+                    <h1>Suggestion Video Title</h5>
+                        <p class="grey">Channel name</p>
+                        <p class="grey">531,624 views</p>
                 </div>
             </div>
             <div class="thumbnail-container">
@@ -232,9 +257,9 @@
                     <a href="#"> <img src="images/thumbnail.jpg" alt=""> </a>
                 </div>
                 <div class="thumbnail-info  ">
-                     <h1>How Game of Thrones Should Have Ended</h5>
-                    <p class="grey">Numberphile</p>
-                    <p class="grey">531,624 views</p>
+                    <h1>Suggestion Video Title</h5>
+                        <p class="grey">Channel name</p>
+                        <p class="grey">531,624 views</p>
                 </div>
             </div>
             <div class="thumbnail-container">
@@ -242,9 +267,9 @@
                     <a href="#"> <img src="images/thumbnail.jpg" alt=""> </a>
                 </div>
                 <div class="thumbnail-info  ">
-                     <h1>How Game of Thrones Should Have Ended</h5>
-                    <p class="grey">Numberphile</p>
-                    <p class="grey">531,624 views</p>
+                    <h1>Suggestion Video Title</h5>
+                        <p class="grey">Channel name</p>
+                        <p class="grey">531,624 views</p>
                 </div>
             </div>
             <div class="thumbnail-container">
@@ -252,9 +277,9 @@
                     <a href="#"> <img src="images/thumbnail.jpg" alt=""> </a>
                 </div>
                 <div class="thumbnail-info  ">
-                     <h1>How Game of Thrones Should Have Ended</h5>
-                    <p class="grey">Numberphile</p>
-                    <p class="grey">531,624 views</p>
+                    <h1>Suggestion Video Title</h5>
+                        <p class="grey">Channel name</p>
+                        <p class="grey">531,624 views</p>
                 </div>
             </div>
             <div class="thumbnail-container">
@@ -262,9 +287,9 @@
                     <a href="#"> <img src="images/thumbnail.jpg" alt=""> </a>
                 </div>
                 <div class="thumbnail-info  ">
-                     <h1>How Game of Thrones Should Have Ended</h5>
-                    <p class="grey">Numberphile</p>
-                    <p class="grey">531,624 views</p>
+                    <h1>Suggestion Video Title</h5>
+                        <p class="grey">Channel name</p>
+                        <p class="grey">531,624 views</p>
                 </div>
             </div>
             <div class="thumbnail-container">
@@ -272,9 +297,9 @@
                     <a href="#"> <img src="images/thumbnail.jpg" alt=""> </a>
                 </div>
                 <div class="thumbnail-info  ">
-                     <h1>How Game of Thrones Should Have Ended</h5>
-                    <p class="grey">Numberphile</p>
-                    <p class="grey">531,624 views</p>
+                    <h1>Suggestion Video Title</h5>
+                        <p class="grey">Channel name</p>
+                        <p class="grey">531,624 views</p>
                 </div>
             </div>
             <div class="thumbnail-container">
@@ -282,19 +307,9 @@
                     <a href="#"> <img src="images/thumbnail.jpg" alt=""> </a>
                 </div>
                 <div class="thumbnail-info  ">
-                     <h1>How Game of Thrones Should Have Ended</h5>
-                    <p class="grey">Numberphile</p>
-                    <p class="grey">531,624 views</p>
-                </div>
-            </div>
-            <div class="thumbnail-container">
-                <div class="thumbnail">
-                    <a href="#"> <img src="images/thumbnail.jpg" alt=""> </a>
-                </div>
-                <div class="thumbnail-info  ">
-                     <h1>How Game of Thrones Should Have Ended</h5>
-                    <p class="grey">Numberphile</p>
-                    <p class="grey">531,624 views</p>
+                    <h1>Suggestion Video Title</h5>
+                        <p class="grey">Channel name</p>
+                        <p class="grey">531,624 views</p>
                 </div>
             </div>
 
