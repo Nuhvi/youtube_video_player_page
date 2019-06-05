@@ -308,7 +308,7 @@ body{
     margin-bottom: 12px;
     display: grid;
     grid-template-columns: 1fr 100px;
-    justify-items: space-between;
+
 }
 
 .next div{
