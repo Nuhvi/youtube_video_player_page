@@ -1,12 +1,11 @@
-
-body{
-    margin: 0 ;
+body {
+    margin: 0;
     font-family: 'Roboto', sans-serif;
     font-weight: 400;
 }
 
 
-.grey{
+.grey {
     color: rgb(131, 131, 131);
 }
 
@@ -14,11 +13,11 @@ body{
 /* --- */
 
 /* General */
-.grey-color{
-    color:grey;
+.grey-color {
+    color: grey;
 }
 
-.border-bottom{
+.border-bottom {
     border-bottom: 1px solid;
     border-color: rgb(192, 192, 192);
 }
@@ -26,23 +25,25 @@ body{
 svg {
     fill: rgb(95, 95, 95);
     max-height: 24px;
-    max-width: 24px;;
+    max-width: 24px;
+    ;
 }
 
-a{
+a {
     text-decoration: none;
 }
+
 /*  */
 
 
 /* Header */
-.header{
+.header {
     display: grid;
     grid-template-columns: 160px auto 240px;
 
-    top:0px;
-    right:0px;
-    left:0px;
+    top: 0px;
+    right: 0px;
+    left: 0px;
 
     z-index: 999;
     background-color: white;
@@ -51,8 +52,8 @@ a{
     padding: 8px;
     height: 40px;
 
-    box-shadow: 0  5px 0  0  rgb(250, 250, 250);
-    
+    box-shadow: 0 5px 0 0 rgb(250, 250, 250);
+
 }
 
 
@@ -61,29 +62,29 @@ a{
     margin: 0;
 }
 
-.header-left a{
-    margin: 0 ;
+.header-left a {
+    margin: 0;
     height: 24px;
     width: 24px;
     padding: 8px;
-    align-self: center;  
+    align-self: center;
 }
 
-#logo{
-    padding-left: 0 ;
+#logo {
+    padding-left: 0;
 }
 
-.header-left a img{
+.header-left a img {
     height: 100%;
     width: auto;
 }
 
-.search{
+.search {
     padding: 8px;
 
 }
 
-.search form{
+.search form {
     height: 32px;
     margin: 0 40px;
     display: grid;
@@ -91,8 +92,8 @@ a{
     justify-content: stretch;
 }
 
-.search form input{
-    font-family:  'Roboto', arial, sans-serif;
+.search form input {
+    font-family: 'Roboto', arial, sans-serif;
     padding-left: 10px;
     font-size: 14px;
     border: 1px solid rgb(177, 177, 177);
@@ -100,24 +101,25 @@ a{
     float: left;
 }
 
-.search form button{
+.search form button {
     border-radius: 0 2px 2px 0;
     background: rgb(247, 247, 247);
     border: 1px solid rgb(175, 175, 175);
-    border-left: none; /* Prevent double borders */
-    border-radius: 0 2px 2px 0 ;
+    border-left: none;
+    /* Prevent double borders */
+    border-radius: 0 2px 2px 0;
     cursor: pointer;
 }
 
-.search form button a{
-    margin: 0 ;
+.search form button a {
+    margin: 0;
     height: 20px;
     width: 20px;
 
-    align-self: center; 
+    align-self: center;
 }
 
-.search form button a svg{
+.search form button a svg {
     height: 20px;
     width: 20px;
 }
@@ -125,7 +127,7 @@ a{
 
 
 
-.header-right{
+.header-right {
     grid-column: 3;
     grid-row: 1;
     display: flex;
@@ -135,29 +137,29 @@ a{
     justify-self: right;
 }
 
-.header-right a{
+.header-right a {
     height: 24px;
     width: 24px;
     padding: 8px;
     align-self: center;
-    margin-right: 8px;  
+    margin-right: 8px;
 }
 
-#user{
+#user {
     height: 32px;
     width: 32px;
     padding: 8px;
 
 }
 
-#user img{
+#user img {
     height: 100%;
     border-radius: 50%;
 }
 
 
 
-.header-right a img{
+.header-right a img {
     align-self: center;
     margin-bottom: 10%;
     height: 120%;
@@ -168,7 +170,7 @@ a{
 
 /* Hidden header */
 
-.wide{
+.wide {
     display: none;
 }
 
@@ -184,10 +186,10 @@ a{
     padding: 24px;
     margin-top: 56px;
     display: grid;
-    grid-template-areas: 
-    "video "
-    "sidebar"
-    "comments";
+    grid-template-areas:
+        "video "
+        "sidebar"
+        "comments";
     height: 100%;
 
 }
@@ -196,13 +198,14 @@ a{
 /* Video section */
 .video-container {
     position: relative;
-    padding-bottom: 56.25%; /*16:9*/
-    padding-top: 30px; 
-    height: 0; 
+    padding-bottom: 56.25%;
+    /*16:9*/
+    padding-top: 30px;
+    height: 0;
     overflow: hidden;
-  }
-   
-  .video-container iframe {
+}
+
+.video-container iframe {
     position: absolute;
     top: 0;
     left: 0;
@@ -210,46 +213,45 @@ a{
     height: 100%;
 }
 
-.video-title{
+.video-title {
     font-size: 9px;
-    padding-top: 8px ;
+    padding-top: 8px;
 
 }
 
-.video-title div{
+.video-title div {
     min-height: 30px;
     display: grid;
     grid-template-columns: auto auto;
 }
 
-.like-share{
+.like-share {
     grid-row: 2;
     justify-self: right;
     grid-gap: 24px;
 }
 
-.like{
+.like {
     border-bottom: 2px solid;
     border-color: grey;
     padding-bottom: 8px;
     grid-gap: 16px;
 }
 
-#share{
+#share {
     display: grid;
     grid-template-columns: auto auto auto;
     grid-gap: 16px;
 }
 
 
-.video-title span{
-    font-size:16px;
+.video-title span {
+    font-size: 16px;
     color: grey;
-    font-weight: medium;
-    font-family:  roboto;
+    font-family: roboto;
 }
 
-.like-share span{
+.like-share span {
     font-size: 13px;
     font-weight: bold;
     color: rgb(116, 116, 116);
@@ -259,50 +261,50 @@ a{
     height: 24px;
 }
 
-.like-share a{
+.like-share a {
     height: 24px;
     display: flex;
     grid-gap: 2px;
     align-items: center;
 }
 
-.like-share a svg{
+.like-share a svg {
     margin-right: 8px;
-    fill:rgb(158, 158, 158);
+    fill: rgb(158, 158, 158);
 }
 
 
-.video-info{
+.video-info {
     margin-bottom: 24px;
     padding-bottom: 16px;
     display: grid;
     grid-template-rows: 67px auto;
 }
 
-.owner{
+.owner {
     display: grid;
-    grid-template-columns: 64px 1fr 1fr ;
+    grid-template-columns: 64px 1fr 1fr;
     align-items: center;
     padding-top: 16px;
 }
 
 
-.owner-icon img{
+.owner-icon img {
     border-radius: 50%;
 }
 
-.owner-name h1{
+.owner-name h1 {
     font-size: 14px;
     font-weight: bold;
-    margin:0px;
+    margin: 0px;
 }
 
-.owner-name p{
+.owner-name p {
     font-size: 14px;
-    margin:0px;
+    margin: 0px;
 }
 
-.subscribe{
+.subscribe {
     justify-self: right;
     background-color: red;
     height: 37px;
@@ -311,10 +313,11 @@ a{
     display: grid;
     justify-content: center;
 }
-.subscribe a{
+
+.subscribe a {
     /* font-weight: bold; */
     border-radius: 2px;
-    color:white;
+    color: white;
     text-decoration: none;
     align-self: center;
     font-size: 14px;
@@ -322,16 +325,17 @@ a{
 
 
 
-.description{
+.description {
     margin-top: 14px;
     margin-left: 64px;
 }
-.description p{
+
+.description p {
     margin: auto;
     font-size: 14px;
 }
 
-.description a{
+.description a {
     text-decoration: none;
     font-size: 12px;
     font-weight: 600;
@@ -345,25 +349,25 @@ a{
 
 
 
-.next *{
+.next * {
     margin: 0;
 }
 
-.next{
+.next {
     margin-bottom: 12px;
     display: grid;
     grid-template-columns: 1fr 100px;
 
 }
 
-.next div{
+.next div {
     align-items: center;
     display: grid;
     grid-template-columns: auto 20px;
 
 }
 
-.next div h4{
+.next div h4 {
     align-self: center;
     margin-right: 10px;
     text-decoration: none;
@@ -371,30 +375,30 @@ a{
     font-weight: 600;
 }
 
-.next div label{
+.next div label {
     align-self: center;
 }
 
 
 
-.break{
+.break {
     padding: 2px;
     margin-bottom: 16px;
 }
 
-.thumbnail-container{
+.thumbnail-container {
     margin-bottom: 8px;
     display: grid;
     grid-template-columns: 168px auto;
 }
 
 
-.thumbnail a img{
-    width:168px;
+.thumbnail a img {
+    width: 168px;
     height: 94px;
 }
 
-.thumbnail-info{
+.thumbnail-info {
     margin-left: 8px;
 }
 
@@ -403,7 +407,7 @@ a{
     font-size: 14px;
 }
 
-.thumbnail-info h1{
+.thumbnail-info h1 {
     font-weight: 600;
 }
 
@@ -414,48 +418,48 @@ a{
 
 /* Comments */
 
-.sort { 
+.sort {
     display: flex;
     height: 24px;
     margin-bottom: 24px;
 }
 
-.sort h2{
+.sort h2 {
     font-size: 16px;
-    margin: 0 ;
+    margin: 0;
     margin-right: 32px;
     padding-top: 2px;
 }
 
-.sort a{
+.sort a {
     margin-right: 10px;
 }
 
-.sort div{
+.sort div {
     color: rgb(138, 138, 138);
     font-size: 15px;
     font-weight: bold;
     padding-top: 4px;
 }
 
-.comments div{
+.comments div {
     display: flex;
     margin-bottom: 16px;
 }
 
 .comments div a {
-    height:40px;
+    height: 40px;
     width: 40px;
     margin-right: 16px;
 }
 
-.comments div a img{
+.comments div a img {
     max-width: 40px;
     height: auto;
     border-radius: 50%
 }
 
-.add-comment{
+.add-comment {
     color: grey;
     font-size: 14px;
     width: 100%;
@@ -468,63 +472,65 @@ a{
 /* Responsive media query */
 
 @media screen and (min-width: 550px) {
-    .like-share{
+    .like-share {
         grid-row: 1;
         grid-column: 2;
     }
-
+}
 
 @media screen and (min-width: 780px) {
-    .header{
-       align-content: center ;
-       grid-template-columns: 160px auto 240px;
+    .header {
+        align-content: center;
+        grid-template-columns: 160px auto 240px;
 
     }
 
-    .header-left a{
+    .header-left a {
         margin-right: 16px;
     }
-    .wide{
+
+    .wide {
         display: inline;
     }
 
-    .small{
+    .small {
         display: none;
     }
-    
+
 
 }
 
 
 @media screen and (min-width: 1000px) {
     .container {
-        grid-template-areas: 
-        "video sidebar"
-        "comments sidebar"; 
+        grid-template-areas:
+            "video sidebar"
+            "comments sidebar";
         grid-template-columns: 664px auto;
         grid-template-rows: auto 1fr;
     }
 
-    .sidebar{
+    .sidebar {
         margin-left: 24px;
         padding-right: 24px;
         grid-area: sidebar;
     }
-    .header{
+
+    .header {
         padding: 8px 16px;
-        grid-auto-columns: 1fr 1fr ;
+        grid-auto-columns: 1fr 1fr;
     }
-} 
+}
 
 @media screen and (min-width: 1100px) {
-    .container{
+    .container {
         max-width: 1650px;
-        margin:56px auto;
-        grid-template-columns: 1fr 400px; 
+        margin: 56px auto;
+        grid-template-columns: 1fr 400px;
     }
 
-    .search{
-        width: 640px ;
+    .search {
+        width: 640px;
         margin: auto;
     }
 }
