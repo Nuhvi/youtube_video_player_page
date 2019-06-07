@@ -1,8 +1,8 @@
 # YouTube’s video player page clone
 
-A clone system of [WebsYouTube video player page ite](https://www.youtube.com/watch?v=jNQXAC9IVRw).<br>
+A clone system of [YouTube video player page](https://www.youtube.com/watch?v=jNQXAC9IVRw).<br>
 Created using  image and video embedding and CSS grid and media query for a responsive layout.
-<br>
+<br><br>
 Built With:
 * HTML5
 * CSS3
