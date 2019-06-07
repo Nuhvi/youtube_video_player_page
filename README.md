@@ -1,11 +1,11 @@
 # YouTube’s video player page clone
 
-A clone system of YouTube video player page [Website](https://www.youtube.com/watch?v=jNQXAC9IVRw).
-Created using  image and video embedding for the main video and the thumbnails at the sidebar as well as CSS grid and media query for a a responsive layout.
-<br><br>
+A clone system of [WebsYouTube video player page ite](https://www.youtube.com/watch?v=jNQXAC9IVRw).<br>
+Created using  image and video embedding and CSS grid and media query for a responsive layout.
+<br>
 Built With:
-* HTML
-* CSS
+* HTML5
+* CSS3
 
 # Authors
 * Ar Nazeh https://github.com/Nazeh
