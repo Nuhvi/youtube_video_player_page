@@ -23,12 +23,15 @@ body{
     border-color: rgb(192, 192, 192);
 }
 
-* svg {
+svg {
     fill: rgb(95, 95, 95);
     max-height: 24px;
     max-width: 24px;;
 }
 
+a{
+    text-decoration: none;
+}
 /*  */
 
 
@@ -209,17 +212,65 @@ body{
 
 .video-title{
     font-size: 9px;
-    padding: 8px 0 ;
+    padding-top: 8px ;
 
 }
 
 .video-title div{
-    max-height: 62px;
+    min-height: 30px;
+    display: grid;
+    grid-template-columns: auto auto;
 }
+
+.like-share{
+    grid-row: 2;
+    justify-self: right;
+    grid-gap: 24px;
+}
+
+.like{
+    border-bottom: 2px solid;
+    border-color: grey;
+    padding-bottom: 8px;
+    grid-gap: 16px;
+}
+
+#share{
+    display: grid;
+    grid-template-columns: auto auto auto;
+    grid-gap: 16px;
+}
+
+
 .video-title span{
     font-size:16px;
-    
+    color: grey;
+    font-weight: medium;
+    font-family:  roboto;
 }
+
+.like-share span{
+    font-size: 13px;
+    font-weight: bold;
+    color: rgb(116, 116, 116);
+}
+
+.views span {
+    height: 24px;
+}
+
+.like-share a{
+    height: 24px;
+    display: flex;
+    grid-gap: 2px;
+    align-items: center;
+}
+
+.like-share a svg{
+    margin-right: 8px;
+    fill:rgb(158, 158, 158);
+}
+
 
 .video-info{
     margin-bottom: 24px;
@@ -277,7 +328,7 @@ body{
 }
 .description p{
     margin: auto;
-    font-size: 15px;
+    font-size: 14px;
 }
 
 .description a{
@@ -414,13 +465,13 @@ body{
 
 
 
-
-
-
-
-
-
 /* Responsive media query */
+
+@media screen and (min-width: 550px) {
+    .like-share{
+        grid-row: 1;
+        grid-column: 2;
+    }
 
 
 @media screen and (min-width: 780px) {
