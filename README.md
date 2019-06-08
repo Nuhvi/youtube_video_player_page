@@ -7,9 +7,9 @@ Built With:
 * HTML5
 * CSS3
 
+# GitHub Page
+Live version: https://nazeh.github.io/youtube_video_player_page/
+
 # Authors
 * Ar Nazeh https://github.com/Nazeh
 * Abdusaid10 https://github.com/Abdusaid10
-
-# GitHub Page
-Live version: https://nazeh.github.io/youtube_video_player_page/
