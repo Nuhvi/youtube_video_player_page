@@ -19,7 +19,7 @@ iframe {
 
 /* General */
 .grey-color {
-    color: grey;
+    color: rgb(97, 97, 97);
 }
 
 .border-bottom {
@@ -286,7 +286,7 @@ a {
 
 .like-share a svg {
     margin-right: 8px;
-    fill: rgb(158, 158, 158);
+    fill: rgb(97, 97, 97, .6);
 }
 
 
@@ -344,6 +344,10 @@ a {
     align-self: center;
     font-size: 14px;
     font-family: Roboto Medium;
+}
+
+.subscribe a span{
+    color: rgba(255, 255, 255, 0.85);
 }
 
 
